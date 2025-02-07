@@ -1,0 +1,26 @@
+body{
+    background: rgb(180, 180, 185);
+}
+h1{
+    color: black;
+    text-align:center;
+    font-size: 38;
+    font-style: oblique;
+}
+h2{ color:black;
+text-align:center;
+}
+.log{ 
+    display: flex;
+    width: 50px;
+}
+.gif{display: flex;
+    width: 250px;
+    justify-content: left;
+    align-items: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 2cap;
+    border-color: black;
+    border-radius: 10px;
+    padding: 20px;}
