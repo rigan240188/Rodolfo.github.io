@@ -1,0 +1,28 @@
+body{
+    background: url("C:/ProgWeb2025/imagenes/ola.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#titulo{
+    font: bold 42px broadway, sans-serif;
+    text-align: center;
+    color: white;
+}
+.textos{
+    align-items: center;
+    font: arial 18px broadway, sans-serif;
+    text-align: left;
+    color: white;
+}
+#tube{
+    padding: 0;
+    font: arial 24px broadway, sans-serif;
+    text-align: left;
+    color: white;
+    position: absolute;
+
+    top: 10%;
+    left: 60%;
+    
+}
+

@@ -1,0 +1,34 @@
+#registro{
+background: radial-gradient(pink, yellow);
+    border: medium none;
+    color: rgb(24, 23, 23);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    text-align: left;
+    width: 22%;
+    height: 25%;
+
+}
+#registro form legend{
+    font: bold 24px arial, sans-serif;
+    text-align: left;
+    color: rgb(24, 23, 23);
+}
+#registro label{
+    display: block;
+}
+#registro textarea{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    font: 12px arial, sans-serif;
+    padding-top: 0;
+    padding-left: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+
+}

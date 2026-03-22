@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta charset="iso-8859-1">
+    <meta name="description" content="ejemplo HTML5">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <title>Formulario de registro</title>
+    <script src="modernizar.min.js"></script>
+    <link rel="stylesheet" href="estilos/estilo2.css">
+</head>
+
+<body>
+    
+    <fieldset id="registro">
+        
+       <form name="registro" action="PHP/insertarcoches.php" method="post">
+        <legend>Registro de coches</legend>
+        <br>
+        <label for="vehiculo" >Seleccione la marca del vehiculo</label>
+        <select name="marca">
+        <option>VMW</option>
+        <option>Kia</option>
+        <option>Nissan</option>
+        <option>Chrysler</option>
+        <option>VolksWagen</option>
+        <option>Chevrolet</option>
+        </select>
+
+        <br><br>      
+        <label for="modelo">Indique el modelo</label>
+        <input type="text" name="contraseña" class="texto" size="40"/>
+        <br><br>      
+        <label for="color" >Indique el color</label>
+        <input type="text" name="color" class="texto" size="40"/>
+        <br><br>       
+        <label for="anio" >Año de matricula</label>
+        <input type="text" name="fecha" class="texto" size="40"/>
+        <br><br>      
+        <label for="radio" >Combustible</label>
+        <input type="radio" name="combustible" value="Diesel" checked />Diesel<br>
+        <input type="radio" name="combustible" value="Gasolina" checked>Gasolina
+        <br><br>      
+        <label for="precio" >Precio </label>
+        <input type="text" name="precio" class="texto" size="40"/>
+        <br><br>           
+        <input type="submit" name="insertar" class="botonenviar" value="enviar"/>
+        
+    </form>
+</fieldset>
+    
+</body>
+
+</html>
