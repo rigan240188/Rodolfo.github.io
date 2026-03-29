@@ -3,17 +3,17 @@ import { db } from "./firebase.js"
 import { collection, getDocs } from 
 "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"
 
-const boton = document.getElementById("abrirChat")
-const chat = document.getElementById("chatbot")
-const cerrar = document.getElementById("cerrarChat")
+const boton = document.getElementById("abrirChat");
+const chat = document.getElementById("chatbot");
+const cerrar = document.getElementById("cerrarChat");
 
-boton.onclick = () =>{
-chat.style.display="flex"
-}
+boton.addEventListener("click", () => {
+    chat.style.display = "flex";
+});
 
-cerrar.onclick = () =>{
-chat.style.display="none"
-}
+cerrar.addEventListener("click", () => {
+    chat.style.display = "none";
+});
 
 enviar.onclick = async () =>{
 
