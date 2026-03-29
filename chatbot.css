@@ -1,34 +1,99 @@
+/* BOTON FLOTANTE */
+
 #abrirChat{
 position:fixed;
 bottom:20px;
 right:20px;
-padding:15px;
+background:#0d6efd;
+color:white;
 border:none;
 border-radius:50%;
-background:#007bff;
-color:white;
+width:60px;
+height:60px;
+font-size:24px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
-#chat{
+/* CONTENEDOR CHAT */
+
+#chatbot{
 position:fixed;
-bottom:80px;
+bottom:90px;
 right:20px;
-width:300px;
-height:400px;
+width:320px;
+height:420px;
 background:white;
-border:1px solid #ccc;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
 display:none;
 flex-direction:column;
+font-family:Arial;
+overflow:hidden;
 }
 
+/* HEADER */
+
+#chat-header{
+background:#0d6efd;
+color:white;
+padding:12px;
+font-weight:bold;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* AREA MENSAJES */
+
 #mensajes{
-height:320px;
-overflow-y:auto;
+flex:1;
 padding:10px;
+overflow-y:auto;
+background:#f5f5f5;
+}
+
+/* BURBUJAS */
+
+.mensaje-usuario{
+background:#0d6efd;
+color:white;
+padding:8px 12px;
+border-radius:15px;
+margin:5px 0;
+max-width:70%;
+margin-left:auto;
+}
+
+.mensaje-bot{
+background:#e4e6eb;
+padding:8px 12px;
+border-radius:15px;
+margin:5px 0;
+max-width:70%;
+}
+
+/* INPUT */
+
+#chat-input{
+display:flex;
+border-top:1px solid #ddd;
 }
 
 #entrada{
-width:70%;
+flex:1;
+border:none;
+padding:10px;
+outline:none;
+}
+
+#enviar{
+background:#0d6efd;
+color:white;
+border:none;
+width:50px;
+cursor:pointer;
+}
 }
 
 #enviar{
