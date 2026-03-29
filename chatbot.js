@@ -3,19 +3,6 @@ import { db } from "./firebase.js"
 import { collection, getDocs } from 
 "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"
 
-const enviar = document.getElementById("enviar");
-
-enviar.onclick = () => {
-
-let entrada = document.getElementById("entrada")
-let mensaje = entrada.value
-
-console.log("mensaje enviado:", mensaje)
-
-document.getElementById("mensajes").innerHTML +=
-"<p><b>Tú:</b> "+mensaje+"</p>"
-
-}
 const boton = document.getElementById("abrirChat")
 const chat = document.getElementById("chat")
 const enviar = document.getElementById("enviar")
