@@ -4,11 +4,15 @@ import { collection, getDocs } from
 "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"
 
 const boton = document.getElementById("abrirChat")
-const chat = document.getElementById("chat")
-const enviar = document.getElementById("enviar")
+const chat = document.getElementById("chatbot")
+const cerrar = document.getElementById("cerrarChat")
 
 boton.onclick = () =>{
-chat.style.display = chat.style.display === "none" ? "flex":"none"
+chat.style.display="flex"
+}
+
+cerrar.onclick = () =>{
+chat.style.display="none"
 }
 
 enviar.onclick = async () =>{
