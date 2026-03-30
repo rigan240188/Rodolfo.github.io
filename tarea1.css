@@ -96,16 +96,16 @@ body{
 #presenta{
     position: absolute;
     font: 14px verdana,sans-serif;
-    text-align: center;
+    text-align: left;
     color: yellow;
 
-    top: 62%;
+    top: 68%;
     left: 32.5%;
-    height: 13%;
+    height: 15%;
     width: 40%;
     margin: 17px;
     padding: 37px;
-    background-color: gray;
+    background-color: rgb(180, 101, 36);
 
     -moz-border-radius:14px;
     -webkit-border-radius:14px;
