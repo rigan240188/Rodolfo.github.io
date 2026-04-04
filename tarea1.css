@@ -45,8 +45,8 @@ body{
     height: 59%;
     width: 10.5%;
 
-    background-color: #D9D909;
-    color: #454545;
+    background-color: rgb(61, 153, 244);
+    color: #1b1b1c;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
 }
