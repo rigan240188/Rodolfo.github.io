@@ -113,8 +113,19 @@ li {
   font-weight: bold;
   color: #28a745;
 }
-font-weight: 600;
+
+/* CONTENEDOR GENERAL */
+.contenedor{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:150px;   /* espacio entre imágenes y login */
 }
-.wrapper .register-link p a:hover{
-text-decoration: underline;
+
+/* IMAGENES LATERALES */
+.imagen{
+  width:250px;
+  height:auto;
+  border-radius:10px;
 }
+
