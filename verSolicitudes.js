@@ -39,7 +39,7 @@ querySnapshot.forEach((doc)=>{
 
 const datos = doc.data()
 
-if(especialidad=="" || datos.especialidad == especialidad){
+if(puesto=="" || datos.puesto == puesto){
 
 tabla.innerHTML += `
 <tr>
