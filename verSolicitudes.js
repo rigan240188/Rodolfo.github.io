@@ -29,7 +29,7 @@ cargarSolicitudes()
 
 window.buscar = async function(){
 
-const especialidad = document.getElementById("buscarEspecialidad").value
+const especialidad = document.getElementById("buscarPuesto").value
 
 tabla.innerHTML=""
 
