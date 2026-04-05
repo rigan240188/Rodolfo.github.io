@@ -21,6 +21,12 @@ await addDoc(collection(db, "solicitudes"), {
 })
 
 alert("Registro enviado correctamente")
+    
+document.getElementById("nombre").value = ""
+document.getElementById("correo").value = ""
+document.getElementById("telefono").value = ""
+document.getElementById("especialidad").value = ""
+document.getElementById("puesto").value = ""
 
 } catch (error) {
 
