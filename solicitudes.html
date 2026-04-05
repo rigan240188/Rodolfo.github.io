@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<title>Solicitudes de trabajo</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+table{
+margin:auto;
+border-collapse:collapse;
+width:80%;
+background:white;
+}
+
+th, td{
+border:1px solid #ccc;
+padding:10px;
+}
+
+th{
+background:#333;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Solicitudes de empleo</h2>
+<br><br>
+<select id="buscarEspecialidad">
+<option value="">Todas</option>
+<option value="Programación">Programación</option>
+<option value="Diseño Grafico">Diseño Grafico</option>
+<option value="Contabilidad">Contabilidad</option>
+<option value="Marketing">Marketing</option>
+<option value="Administración">Administración</option>
+<option value="Electricidad">Electricidad</option>
+<option value="Mecánica">Mecánica</option>
+</select>
+
+<button onclick="buscar()">Buscar</button>
+
+<br><br>
+
+<table>
+
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Correo</th>
+<th>Telefono</th>
+<th>Especialidad</th>
+<th>Puesto</th>
+</tr>
+</thead>
+
+<tbody id="tablaSolicitudes"></tbody>
+
+</table>
+
+<script type="module" src="verSolicitudes.js"></script>
+
+</body>
+</html>
