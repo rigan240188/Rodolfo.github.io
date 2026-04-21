@@ -118,7 +118,7 @@ article{
 }
 
 #imagen{
-    position:static;
+    position:center;
     margin-bottom:15px;
 }
 
@@ -128,7 +128,7 @@ article{
 }
 
 #presenta{
-    position:static;
+    position:center;
     width:100%;
     padding:20px;
     margin-top:10px;
