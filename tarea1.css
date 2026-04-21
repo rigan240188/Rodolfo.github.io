@@ -27,10 +27,14 @@ header{
     text-align:center;
 }
 
-#logo,
-#login{
+#logo{
     position:static;
     width:auto;
+}
+
+#login{
+    position:static;
+    width:100%;
 }
 
 #logo img,
