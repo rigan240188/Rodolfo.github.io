@@ -147,6 +147,10 @@ article{
 /* ========================= */
 @media(max-width:600px){
 
+    #logo,
+    #login{
+    display:none;
+    }
     header{
         flex-direction:column;
         text-align:center;
@@ -155,20 +159,39 @@ article{
     #banner{
         font-size:22px;
     }
+#menuBtn{
+    display:block;
+    width:90%;
+    margin:10px auto;
+    padding:12px;
+    font-size:18px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
 
-    #boton{
-        flex-direction:column;
-        align-items:center;
-    }
+#menu{
+    display:none;
+}
 
-    #boton li{
-        width:90%;
-    }
+#menu.activo{
+    display:block;
+}
 
-    #boton li a{
-        width:100%;
-        text-align:center;
-    }
+#boton{
+    flex-direction:column;
+    align-items:center;
+}
+
+#boton li{
+    width:90%;
+}
+
+#boton li a{
+    width:100%;
+    text-align:center;
+}
 
     #presenta{
         font-size:13px;
