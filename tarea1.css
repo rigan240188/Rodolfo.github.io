@@ -83,7 +83,7 @@ main{
 
 /* MENU IZQUIERDO */
 #left{
-    flex:1 1 220px;
+    flex:1;
 }
 
 #menu2{
@@ -113,9 +113,11 @@ main{
 
 /* CENTRO */
 article{
+    flex:3;
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
     text-align:center;
 }
 
@@ -133,7 +135,7 @@ article{
 }
 /* DERECHA */
 #right{
-    flex:1 1 150px;
+    flex:0.5;
 }
 
 /* FOOTER */
