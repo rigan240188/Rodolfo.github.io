@@ -10,6 +10,9 @@ body{
     font-family: Arial, sans-serif;
 }
 
+#menuBtn{
+    display:none;
+}
 /* HEADER */
 header{
     display:flex;
@@ -118,6 +121,7 @@ article{
     font-size:12px;
     color:gray;
 }
+
 
 /* ========================= */
 /* RESPONSIVE TABLET */
