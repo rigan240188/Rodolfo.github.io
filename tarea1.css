@@ -1,121 +1,216 @@
-body{
-    background: rgb(213, 213, 215);
+/* RESET GENERAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-#menu{
-    display: inline-block;
-    list-style: none;
-    padding: 5px;
-    font: bold 14px, verdana,sans-serif;
-}
-#boton{
-    padding: 0;
-    text-align: right;
-    position: absolute;
 
-    top: 27%;
-    left: 23%;
-    height: 70%;
-    width: 60%;
+body{
+    background: rgb(213,213,215);
+    font-family: Arial, sans-serif;
 }
+
+/* HEADER */
+header{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    gap:15px;
+}
+
+#banner{
+    font: bold 32px Broadway, sans-serif;
+    color: blue;
+    flex:1 1 100%;
+    text-align:center;
+}
+
+#logo,
+#login{
+    position:static;
+    width:auto;
+}
+
+#logo img,
+#login img{
+    max-width:100%;
+    height:auto;
+}
+
+/* MENU PRINCIPAL */
+#menu{
+    width:100%;
+    background:#333;
+}
+
+#boton{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:0;
+    position:static;
+    width:100%;
+}
+
 #boton li{
-    display: inline;
-    text-align: right;
+    margin:3px;
 }
 
 #boton li a{
-    font-family: arial;
-    font-size: 12px;
-    text-decoration: none;
-    float: left;
-    padding: 10px;
-    background-color: orange;
-    color: #fff;
-    text-align: right;
+    display:block;
+    padding:10px 15px;
+    background:orange;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
 }
+
 #boton li a:hover{
-    background-color: #2586d7;
-    margin-top: 2px;
-    padding-bottom: 12px;
-    text-align: right;
+    background:#2586d7;
 }
+
+/* CONTENIDO */
+main{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:15px;
+}
+
+/* MENU IZQUIERDO */
+#left{
+    flex:1 1 220px;
+}
+
 #menu2{
-    position: absolute;
-    top: 35%;
-    left: 22.5%;
-    height: 59%;
-    width: 10.5%;
-
-    background-color: rgb(1, 30, 59);
-    color: white;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
+    position:static;
+    width:100%;
+    background:rgb(1,30,59);
+    border-radius:15px;
+    padding:10px;
 }
+
 #menu2 li{
-    display: inline-block;
-    list-style: none;
-    padding: 8px;
-    font: bold 11px, verdana,sans-serif;
+    list-style:none;
+    padding:8px;
 }
+
 #menuvertical li a{
-    text-decoration: none;
-    color: gray;
+    color:white;
+    text-decoration:none;
 }
+
 #menuvertical li a:hover{
-    background-color: white;
-    text-align: right;
-    margin-top: 6px;
-    padding-bottom: 5px;
+    background:white;
+    color:black;
+    padding:5px;
+    border-radius:5px;
 }
-#banner{
-    font: bold 32px broadway, sans-serif;
-    text-align: left;
-    color: blue;
-}
-#logo{
-    position: absolute;
-    top: 1%;
-    left: 34%;
-    height: 15%;
-    width: auto;
 
+/* CENTRO */
+article{
+    flex:3 1 500px;
+    text-align:center;
 }
-#login{
-    position: absolute;
-    top: 1%;
-    left: 61%;
-    height: 15%;
-    width: auto;
-}
+
 #imagen{
-    position: absolute;
-    top: 33%;
-    left: 45%;
-    height: 100%;
-    width: auto;
+    position:static;
+    margin-bottom:15px;
 }
+
+#imagen img{
+    max-width:100%;
+    height:auto;
+}
+
 #presenta{
-    position: absolute;
-    font: 14px verdana,sans-serif;
-    text-align: left;
-    color: yellow;
-
-    top: 68%;
-    left: 32.5%;
-    height: 15%;
-    width: 40%;
-    margin: 17px;
-    padding: 37px;
-    background-color: rgb(180, 101, 36);
-
-    -moz-border-radius:14px;
-    -webkit-border-radius:14px;
+    position:static;
+    width:100%;
+    padding:20px;
+    margin-top:10px;
+    background:rgb(180,101,36);
+    color:yellow;
+    border-radius:14px;
+    font-size:14px;
+    line-height:1.6;
+    text-align:left;
 }
-#pie{
-    position: absolute;
-    font: 12px verdana,sans-serif;
-    text-align: right;
-    color: gray;
 
-    top: 93%;
-    
+/* DERECHA */
+#right{
+    flex:1 1 150px;
+}
+
+/* FOOTER */
+#pie{
+    position:static;
+    text-align:center;
+    padding:20px;
+    font-size:12px;
+    color:gray;
+}
+
+/* ========================= */
+/* RESPONSIVE TABLET */
+/* ========================= */
+@media(max-width:900px){
+
+    main{
+        flex-direction:column;
+    }
+
+    #banner{
+        font-size:26px;
+    }
+
+    #boton{
+        justify-content:center;
+    }
+
+    #boton li a{
+        font-size:13px;
+        padding:10px;
+    }
+}
+
+/* ========================= */
+/* RESPONSIVE CELULAR */
+/* ========================= */
+@media(max-width:600px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #banner{
+        font-size:22px;
+    }
+
+    #boton{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #boton li{
+        width:90%;
+    }
+
+    #boton li a{
+        width:100%;
+        text-align:center;
+    }
+
+    #presenta{
+        font-size:13px;
+        padding:15px;
+    }
+
+    #pie{
+        font-size:11px;
+    }
 }
