@@ -132,6 +132,10 @@ article{
     width:100%;
     margin:0 auto;
     text-align:left;
+    background-color: rgb(180, 101, 36);
+
+    -moz-border-radius:14px;
+    -webkit-border-radius:14px;
 }
 /* DERECHA */
 #right{
